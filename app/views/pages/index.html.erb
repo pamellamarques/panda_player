@@ -1,10 +1,27 @@
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+<%= link_to "Criar Post", new_post_path, class: "btn btn-primary btn-lg"%>
+
 <h1> Últimos Posts</h1>
 	
-<div>
-<img src="#">
-<h2>nome do audio</h2>
- <audio controls>
-  <source src="horse.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio> 
+<% @posts.each do |post| %>
+
+<div class="box">
+
+<%= image_tag post.image.url, class: "tumb" %>
+
+<div class="text">
+<h2><%=post.title %></h2>
+
+<p><%=post.description %></p>
+</div>
+
+ <audio controls class="audio">
+	<source src="<%= post.audio.url %>" type="audio/mpeg">
+	</audio>
+</div>
+
+<%end%>
+</div>
 </div>

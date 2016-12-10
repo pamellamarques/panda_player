@@ -1,0 +1,45 @@
+@import "bootstrap"; 
+img {
+	max-width: 100%
+}
+
+.box {
+	border:1px solid gray;
+	margin:20px;
+	padding:20px;
+	float:left;
+	width: 100%
+}
+
+.tumb {
+	width: 150px;
+	float:left;
+	margin-right: 20px;
+}
+
+.text {
+	float:left;
+	width: calc(100% - 210px);
+}
+
+.audio {
+	float:left;
+	width: 100%
+}
+
+.header {
+float:left;
+width: 100%;
+padding: 20px;
+text-align: center;
+background: black;
+color: white;
+font-size: 30px;
+margin-bottom: 20px;
+}
+
+.tr {
+	display: table-row;
+	vertical-align: inherit;
+    border-color: inherit;	
+}

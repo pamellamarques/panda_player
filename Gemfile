@@ -46,3 +46,11 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+#Paperclip - upload de arquivos
+gem "paperclip", "~> 5.0.0"
+
+#Bootstrap - framework de front
+source 'https://rails-assets.org' do
+	gem 'rails-assets-bootstrap', '3.3.6'
+end
